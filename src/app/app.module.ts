@@ -11,7 +11,7 @@ import { ProductTracklistingComponent } from './product-tracklisting/product-tra
 import { ProductListComponent } from './product-list/product-list.component';
 import { Routes, RouterModule } from '@angular/router';
 
-const appRouts: Routes = [
+const appRoutes: Routes = [
   {
     path: 'products',
     component: ProductListComponent
@@ -34,7 +34,7 @@ const appRouts: Routes = [
     ProductTracklistingComponent,
     ProductListComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(appRouts)],
+  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(appRoutes)],
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
